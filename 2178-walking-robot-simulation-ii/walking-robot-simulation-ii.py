@@ -1,4 +1,4 @@
-# Added using AI
+
 class Robot:
     def __init__(self, width: int, height: int):
         self.x = 0
