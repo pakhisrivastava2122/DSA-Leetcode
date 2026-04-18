@@ -7,16 +7,15 @@ class Solution:
         # return -1
 
         # BINARY SEARCH ALGORITHM 
-        n = len(nums)
-        l = 0 
-        r = n -1
-
-        while l<=r:
-            mid = (l+r)//2
-            if target == nums[mid]:
+        n=len(nums)
+        left=0
+        right=n-1
+        while left<=right:
+            mid=(left+right)//2
+            if nums[mid]==target:
                 return mid
-            elif target > nums[mid]:
-                l = mid + 1
-            else :
-                r = mid - 1 
+            elif nums[mid]<target:
+                left=mid+1
+            else:
+                right=mid-1
         return -1
