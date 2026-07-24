@@ -2,7 +2,7 @@ class Solution:
     def rob(self, nums):
         n = len(nums)
 
-        if n == 1:
+        if n == 1 :
             return nums[0]
 
         dp = [0] * n
